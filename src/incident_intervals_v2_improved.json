@@ -1,0 +1,280 @@
+[
+  {
+    "incident_id": 1,
+    "start_idx": 1461,
+    "end_idx": 1481,
+    "duration_min": 20,
+    "scenario": "backend_failure",
+    "scenario_description": "Backend error → Latency spike → Traffic drop",
+    "affected_metrics": [
+      "error_rate",
+      "request_latency",
+      "request_rate"
+    ],
+    "lags": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "incident_id": 2,
+    "start_idx": 2805,
+    "end_idx": 2823,
+    "duration_min": 18,
+    "scenario": "memory_leak",
+    "scenario_description": "Memory grows → CPU pressure → Latency",
+    "affected_metrics": [
+      "memory_usage",
+      "cpu_utilization",
+      "request_latency"
+    ],
+    "lags": [
+      0,
+      3,
+      6
+    ]
+  },
+  {
+    "incident_id": 3,
+    "start_idx": 4085,
+    "end_idx": 4100,
+    "duration_min": 15,
+    "scenario": "memory_leak",
+    "scenario_description": "Memory grows → CPU pressure → Latency",
+    "affected_metrics": [
+      "memory_usage",
+      "cpu_utilization",
+      "request_latency"
+    ],
+    "lags": [
+      0,
+      3,
+      6
+    ]
+  },
+  {
+    "incident_id": 4,
+    "start_idx": 6215,
+    "end_idx": 6217,
+    "duration_min": 2,
+    "scenario": "latency_only",
+    "scenario_description": "Isolated latency spike (e.g., slow query)",
+    "affected_metrics": [
+      "request_latency"
+    ],
+    "lags": [
+      0
+    ]
+  },
+  {
+    "incident_id": 5,
+    "start_idx": 6230,
+    "end_idx": 6249,
+    "duration_min": 19,
+    "scenario": "service_crash",
+    "scenario_description": "Process crash → CPU/Memory drop → Traffic zero → 100% errors",
+    "affected_metrics": [
+      "cpu_utilization",
+      "memory_usage",
+      "request_rate",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "incident_id": 6,
+    "start_idx": 10764,
+    "end_idx": 10780,
+    "duration_min": 16,
+    "scenario": "memory_leak",
+    "scenario_description": "Memory grows → CPU pressure → Latency",
+    "affected_metrics": [
+      "memory_usage",
+      "cpu_utilization",
+      "request_latency"
+    ],
+    "lags": [
+      0,
+      3,
+      6
+    ]
+  },
+  {
+    "incident_id": 7,
+    "start_idx": 12016,
+    "end_idx": 12033,
+    "duration_min": 17,
+    "scenario": "cpu_spike",
+    "scenario_description": "CPU spike → Latency → Errors",
+    "affected_metrics": [
+      "cpu_utilization",
+      "request_latency",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      2,
+      5
+    ]
+  },
+  {
+    "incident_id": 8,
+    "start_idx": 12035,
+    "end_idx": 12053,
+    "duration_min": 18,
+    "scenario": "service_crash",
+    "scenario_description": "Process crash → CPU/Memory drop → Traffic zero → 100% errors",
+    "affected_metrics": [
+      "cpu_utilization",
+      "memory_usage",
+      "request_rate",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "incident_id": 9,
+    "start_idx": 12156,
+    "end_idx": 12181,
+    "duration_min": 25,
+    "scenario": "memory_leak",
+    "scenario_description": "Memory grows → CPU pressure → Latency",
+    "affected_metrics": [
+      "memory_usage",
+      "cpu_utilization",
+      "request_latency"
+    ],
+    "lags": [
+      0,
+      3,
+      6
+    ]
+  },
+  {
+    "incident_id": 10,
+    "start_idx": 12572,
+    "end_idx": 12586,
+    "duration_min": 14,
+    "scenario": "traffic_spike",
+    "scenario_description": "Traffic surge → CPU load → Latency → Errors",
+    "affected_metrics": [
+      "request_rate",
+      "cpu_utilization",
+      "request_latency",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "incident_id": 11,
+    "start_idx": 15553,
+    "end_idx": 15596,
+    "duration_min": 43,
+    "scenario": "cpu_spike",
+    "scenario_description": "CPU spike → Latency → Errors",
+    "affected_metrics": [
+      "cpu_utilization",
+      "request_latency",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      2,
+      5
+    ]
+  },
+  {
+    "incident_id": 12,
+    "start_idx": 17416,
+    "end_idx": 17459,
+    "duration_min": 43,
+    "scenario": "service_crash",
+    "scenario_description": "Process crash → CPU/Memory drop → Traffic zero → 100% errors",
+    "affected_metrics": [
+      "cpu_utilization",
+      "memory_usage",
+      "request_rate",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "incident_id": 13,
+    "start_idx": 17968,
+    "end_idx": 17996,
+    "duration_min": 28,
+    "scenario": "traffic_spike",
+    "scenario_description": "Traffic surge → CPU load → Latency → Errors",
+    "affected_metrics": [
+      "request_rate",
+      "cpu_utilization",
+      "request_latency",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "incident_id": 14,
+    "start_idx": 18651,
+    "end_idx": 18839,
+    "duration_min": 188,
+    "scenario": "traffic_spike",
+    "scenario_description": "Traffic surge → CPU load → Latency → Errors",
+    "affected_metrics": [
+      "request_rate",
+      "cpu_utilization",
+      "request_latency",
+      "error_rate"
+    ],
+    "lags": [
+      0,
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "incident_id": 15,
+    "start_idx": 19671,
+    "end_idx": 19687,
+    "duration_min": 16,
+    "scenario": "backend_failure",
+    "scenario_description": "Backend error → Latency spike → Traffic drop",
+    "affected_metrics": [
+      "error_rate",
+      "request_latency",
+      "request_rate"
+    ],
+    "lags": [
+      0,
+      1,
+      3
+    ]
+  }
+]

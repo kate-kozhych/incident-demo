@@ -1,0 +1,76 @@
+{
+  "dataset_version": "v2",
+  "dataset_path": "data/synthetic_data_v2_improved.csv",
+  "n_timesteps_total": 20000,
+  "n_incidents": 15,
+  "incident_rate_pct": 2.41,
+  "sliding_window_params": {
+    "W": 60,
+    "H": 15,
+    "training_stride": 1,
+    "inference_stride": 1
+  },
+  "split_params": {
+    "train_ratio": 0.65,
+    "val_ratio": 0.2,
+    "test_ratio": 0.15,
+    "train_end": 13000,
+    "val_end": 17000
+  },
+  "metric_columns": [
+    "cpu_utilization",
+    "memory_usage",
+    "request_latency",
+    "error_rate",
+    "request_rate"
+  ],
+  "data_shapes": {
+    "X_train": [
+      12925,
+      60,
+      5
+    ],
+    "y_train": [
+      12925
+    ],
+    "X_val": [
+      3925,
+      60,
+      5
+    ],
+    "y_val": [
+      3925
+    ],
+    "X_test": [
+      2925,
+      60,
+      5
+    ],
+    "y_test": [
+      2925
+    ]
+  },
+  "class_distribution": {
+    "train": {
+      "negative": 12634,
+      "positive": 291,
+      "positive_pct": 2.251450676982592
+    },
+    "val": {
+      "negative": 3868,
+      "positive": 57,
+      "positive_pct": 1.4522292993630572
+    },
+    "test": {
+      "negative": 2594,
+      "positive": 331,
+      "positive_pct": 11.316239316239317
+    }
+  },
+  "memory_usage_mb": {
+    "X_train": 14.791488647460938,
+    "X_val": 4.4918060302734375,
+    "X_test": 3.3473968505859375,
+    "total": 22.706127166748047
+  }
+}

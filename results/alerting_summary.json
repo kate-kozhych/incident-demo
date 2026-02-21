@@ -1,0 +1,17 @@
+{
+  "threshold": 0.10849246231155779,
+  "k_consecutive": 2,
+  "cooldown_steps": 60,
+  "sample_recall": 0.11782477341389729,
+  "sample_precision": 0.3577981651376147,
+  "f2": 0.13607815762324757,
+  "incident_recall": 1.0,
+  "alert_precision": 0.15384615384615385,
+  "total_alerts": 13,
+  "alerts_per_day": 6.4,
+  "lead_time_mean": 46.8,
+  "lead_time_median": 55.5,
+  "n_caught": 4,
+  "n_missed": 0,
+  "n_incidents": 4
+}

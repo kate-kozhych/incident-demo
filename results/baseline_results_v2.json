@@ -1,0 +1,65 @@
+{
+  "dataset_version": "v2",
+  "test_timesteps": 3000,
+  "test_incident_timesteps": 275,
+  "simple_threshold_plus_drop": {
+    "thresholds_up": {
+      "cpu_utilization": 85,
+      "memory_usage": 85,
+      "request_latency": 250,
+      "error_rate": 10
+    },
+    "k_consecutive": 1,
+    "request_rate_drop": {
+      "column": "request_rate",
+      "window": 60,
+      "ratio": 0.4
+    },
+    "metrics": {
+      "precision": 0.9423076923076923,
+      "recall_timestep": 0.8909090909090909,
+      "f1": 0.9158878504672897,
+      "alert_minutes_per_day": 124.80000000000001,
+      "alert_events_per_day": 3.3600000000000003,
+      "incident_event_recall": 1.0,
+      "incident_events_detected": 4,
+      "incident_events_total": 4
+    },
+    "confusion_matrix": {
+      "tp": 245,
+      "fp": 15,
+      "tn": 2710,
+      "fn": 30
+    }
+  },
+  "voting_hybrid": {
+    "thresholds": {
+      "cpu_utilization": 80,
+      "memory_usage": 80,
+      "request_latency": 200,
+      "error_rate": 8
+    },
+    "votes_required": 2,
+    "k_consecutive": 2,
+    "critical_metrics": [
+      "error_rate",
+      "request_latency"
+    ],
+    "metrics": {
+      "precision": 0.8804780876494024,
+      "recall_timestep": 0.8036363636363636,
+      "f1": 0.8403041825095057,
+      "alert_minutes_per_day": 120.48,
+      "alert_events_per_day": 4.32,
+      "incident_event_recall": 1.0,
+      "incident_events_detected": 4,
+      "incident_events_total": 4
+    },
+    "confusion_matrix": {
+      "tp": 221,
+      "fp": 30,
+      "tn": 2695,
+      "fn": 54
+    }
+  }
+}
